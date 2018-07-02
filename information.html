@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="myself.css">
+    <title>个人资料</title>
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<div class="information">
+    <p>亲爱的<span>千寻</span>，填写真实资料有助于好友找到你哦。</p><br>
+<table>
+    <tr>
+        <td>当前头像：</td>
+        <td>
+            <img src="images/avatar-small.jpg" alt="">
+            <button>上传头像</button>
+        </td>
+    </tr>
+    <tr>
+        <td>昵称：</td>
+        <td>
+            <input type="text" value="千寻">
+        </td>
+    </tr>
+    <tr>
+        <td>真实姓名：</td>
+        <td>
+            <input type="text">
+        </td>
+    </tr>
+    <tr>
+        <td align="right">常用邮箱：</td>
+        <td><input type="text" name="email" readonly="readonly" value="1463439681@qq.com" >不可修改</td>
+    </tr>
+    <tr>
+        <td>性别：</td>
+        <td>
+            <input type="radio" name="gender" checked="checked">男
+            <input type="radio" name="gender" checked="checked">女
+        </td>
+    </tr>
+    <tr>
+        <td>生日：</td>
+        <td>
+            <select name="year" id="year">
+                <option value="0">1990</option>
+                <option value="1">1991</option>
+                <option value="2">1992</option>
+                <option value="3">1993</option>
+                <option value="4">1994</option>
+            </select>年
+            <select name="month" id="month">
+                <option value="0">1</option>
+                <option value="1">2</option>
+            </select>月
+            <select name="day" id="day">
+                <option value="0">30</option>
+                <option value="0">31</option>
+            </select>日
+        </td>
+    </tr>
+    <tr>
+        <td>所在地：</td>
+        <td>
+            <select name="shi">
+                <option value="0">重庆市</option>
+            </select>
+            <select name="qu">
+                <option value="1">璧山区</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <button>保存</button>
+        </td>
+    </tr>
+</table>
+</div>
+<script>
+    for (var i=1990;i<2019;i++){
+        $("#year").html($("#year").html()+"<option value='"+i+"'>"+i+"</option>>")
+    }
+    for (var i=1;i<13;i++){
+        $("#month").html($("#month").html()+"<option value='"+i+"'>"+i+"</option>>")
+    }
+    for (var i=1;i<32;i++){
+        $("#day").html($("#day").html()+"<option value='"+i+"'>"+i+"</option>>")
+    }
+
+</script>
+</body>
+</html>

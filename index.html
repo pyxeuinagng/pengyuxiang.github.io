@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的个人简历</title>
+    <link rel="stylesheet" href="myself.css">
+</head>
+<body>
+<!--导航栏开始-->
+<nav class="clearfix">
+    <ul>
+        <li>
+            <a href="./index.html">
+                <span>首页</span>
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="welfare.html">
+                <span>公益</span>
+                <span>公益</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="wblog.html">
+                <span>娱乐</span>
+                <span>娱乐</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <span>我的胶囊</span>
+                <span>我的胶囊</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<!--导航栏结束-->
+<!--主体部分开始-->
+<div class="main">
+    <div class="w">
+    <aside>
+    <div class="my">
+        个人信息表
+    </div>
+        <div class="img">
+            <img src="images/avatar.jpg" alt="">
+        </div>
+        <p>彭宇祥</p>
+        <hr>
+        <dl>
+            <dt>账号管理</dt>
+            <dd><a href="./information.html" target="content">个人资料</a></dd>
+            <dd><a href="./growth.html" target="content">个人成长信息</a></dd>
+            <dd><a href="./pay.html" target="content">支付宝绑定设置</a></dd>
+        </dl>
+    </aside>
+    <side>
+        <iframe frameborder="0"   scrolling="no" src="information.html" name="content" id="iframe_id"></iframe>
+    </side>
+    </div>
+</div>
+<!--主体部分结束-->
+<!--footer开始-->
+<div class="footer clearfix">
+    <img src="images/footer.gif">
+    <footer>
+       2018&copy;彭宇祥
+    </footer>
+</div>
+    <!--footer结束-->
+</body>
+<script>
+    // iframe去除滚动条
+    // $(function(){
+    //     $("#iframe_id").load(function(){
+    //         var height = $(this).contents().find("#content").height() + 90;
+    //         //这样给以一个最小高度
+    //         $(this).height( height < 900 ? 800 : height );
+    //     });
+    // });
+
+
+</script>
+</html>
